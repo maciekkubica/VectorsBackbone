@@ -1,18 +1,20 @@
 <!Doctype html>
 <head>
+    <link rel="stylesheet" href="styles/style.css">
 	<script type="text/javascript" src="lib/jquery.js"></script>
 	<script type="text/javascript" src="lib/underscore.js"></script>
 	<script type="text/javascript" src="lib/backbone.js"></script>
+	<script type="text/javascript" src="src/models/InputData.js"></script>
 	<script type="text/javascript" src="src/models/Vector.js"></script>
 	<script type="text/javascript" src="src/collections/VectorList.js"></script>
 	<script type="text/javascript" src="src/models/App.js"></script>
+	<script type="text/javascript" src="src/Views/InputDataView.js"></script>
 	<script type="text/javascript" src="src/Views/VectorView.js"></script>
 	<script type="text/javascript" src="src/Views/VectorListView.js"></script>
 	<script type="text/javascript" src="src/Views/AppView.js"></script>
 
 </head>
 <body>
- <div>halo</div>
  <script type="text/javascript">
  	var app = new App({vectorList:new VectorList([{x:3,y:9},{x:4,y:-7}])});
  	var appView = new AppView({model:app});

@@ -4,5 +4,9 @@ var App = Backbone.Model.extend({
 		if(currVectorList===undefined){
 			this.set("vectorList", new VectorList());
 		}
+		var currInputData = this.get("inputData");
+		if(currInputData===undefined){
+			this.set("inputData", new InputData());
+		}
 	}
 });

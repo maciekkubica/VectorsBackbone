@@ -1,0 +1,9 @@
+.vectorListItem 
+{
+    cursor: pointer;
+}
+
+.vectorListItem:hover
+{
+    font-weight: bold;
+}
