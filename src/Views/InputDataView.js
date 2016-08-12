@@ -12,7 +12,8 @@ var InputDataView = Backbone.View.extend({
 
 	setPoint: function() {
 		var ptTxt = $('#inputbox').val();
-		this.model.set('newPoint',JSON.parse(ptTxt));
+		var txtPoint = $.parseJSON(ptTxt);
+		this.model.set('newPoint',txtPoint);
 	},
 
 	render: function(){
